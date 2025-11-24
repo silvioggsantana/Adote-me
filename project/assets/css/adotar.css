@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* --- NAV-BAR --- */
+navbar-custom {
+    background-color: #ffffff;
+}
+
+.navbar-nav {
+    gap: 30px;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important;  
+}
+
+.navbar-nav .nav-link:hover {
+    color: #575151 !important; 
+}
+
+.navbar-nav .nav-link {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500; 
+}
+/* --- NAV-BAR FIM --- */
+
+/* --- TÍTULO --- */
+.decoracao-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.patas {
+    width: 90px;
+}
+
+.osso {
+    width: 70px;
+    opacity: 0.6;
+    transform: rotate(-10deg);
+}
+
+.titulo-decoracao {
+    margin: 0 auto;
+    font-family: "Staatliches", sans-serif;
+    font-size: 32px; 
+    color: #000;
+    text-align: center;
+}
+/* --- TÍTULO FIM --- */
+
+/* CONTAINER DOS CARDS */
+.card {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    overflow: hidden;
+    transition: transform .2s;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGEM DO CARD */
+.card-img-top {
+    height: 210px;             
+    object-fit: cover;          
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+/* CORPO DO CARD */
+.card-body {
+    padding: 20px 22px;
+}
+
+/* TEXTO */
+.card-body p {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #222;
+    font-family: "Alexandria", sans-serif;
+}
+
+/* BOTÃO ADOTAR */
+.btn-adotar {
+    display: inline-block;      
+    width: 180px;             
+    background-color: #C98C45;
+    color: white;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-family: "Staatliches", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.btn-adotar:hover {
+    background-color: #a67134;
+}
+
+/* --- ÍCONES DECORATIVOS ABAIXO DA 2ª LINHA --- */
+.decoracao-cards {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+}
+
+/* Osso à esquerda — agora encostado na borda como no Figma */
+.decoracao-osso {
+    position: absolute;
+    width: 85px;  
+    left: -25px;       /* JOGA PARA A BORDA ESQUERDA */
+    top: -5px;
+    opacity: 0.8;
+    transform: rotate(-15deg);
+}
+
+/* Patas à direita — agora encostadas na borda como no Figma */
+.decoracao-patas {
+    position: absolute;
+    width: 75px;
+    right: -25px;      /* JOGA PARA A BORDA DIREITA */
+    top: -10px;
+    opacity: 0.9;
+}
+/* --- ÍCONES DECORATIVOS ABAIXO DA 2ª LINHA FIM --- */
+
+/* --- FOOTER --- */
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+}
+
+.dev-title {
+    margin-bottom: 35px; 
+    font-size: 26px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.dev-info p {
+    margin: 100px 100;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Staatliches", sans-serif;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo-footer img {
+    width: 240px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-footer .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+.dev-info {
+    font-family: "Staatliches", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dev-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* --- FOOTER FIM --- */

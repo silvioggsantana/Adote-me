@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+navbar-custom {
+    background-color: #ffffff; /* coloque a cor que quiser */
+}
+
+.navbar-nav {
+    gap: 30px; /* altere o valor como quiser */
+}
+
+/* Muda a cor dos links */
+.navbar-nav .nav-link {
+    color: #000 !important;   /* ALTERE AQUI */
+}
+
+/* Cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    color: #575151 !important;  /* ALTERE AQUI */
+}
+
+/* Fonte apenas no navbar */
+.navbar-nav .nav-link {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500; /* ajuste se quiser */
+}
+
+/* Container da imagem */
+.container-principal {
+    position: relative;
+    width: 100%;
+}
+
+/* A imagem continua 100% normal */
+.container-principal img {
+    width: 100%;
+    display: block;
+}
+
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* BOTÃO POSICIONADO NO LADO DIREITO EM CIMA DO TEXTO */
+.botao-adotar {
+    font-family: "Staatliches", sans-serif !important;
+    position: absolute;
+
+    /* POSIÇÃO QUE FICA IGUAL AO FIGMA */
+    right: 8%;       /* distancia da borda direita */
+    bottom: 10%;     /* distancia da parte inferior */
+
+    background-color: #FFFFFF;
+
+    /* AUMENTE AQUI PARA DEIXAR O BOTÃO MAIS LARGO */
+    padding: 18px 55px;   /* ← largura maior (aumentei de 38 para 55) */
+
+    border-radius: 40px;
+
+    color: #5A2926;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+/* BOTÃO POSICIONADO NO LADO DIREITO EM CIMA DO TEXTO */
+.botao-adotar {
+    font-family: "Staatliches", sans-serif !important;
+    position: absolute;
+
+    /* POSIÇÃO QUE FICA IGUAL AO FIGMA */
+    right: 8%;       /* distancia da borda direita */
+    bottom: 10%;     /* distancia da parte inferior */
+
+    background-color: #FFFFFF;
+
+    /* AUMENTE AQUI PARA DEIXAR O BOTÃO MAIS LARGO */
+    padding: 14px 80px;
+   /* ← largura maior (aumentei de 38 para 55) */
+
+    border-radius: 40px;
+
+    color: #5A2926;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+
+.botao-adotar:hover {
+    transform: scale(1.05);
+    background-color: #f7f1f1;
+}
+
+/* CONTAINER DOS CARDS */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #ffffff;
+}
+
+/* CADA CARD */
+.card-info {
+    font-family: "Staatliches", sans-serif !important;
+    background-color: #C98C45; 
+    width: 200px;
+    padding: 25px 18px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: "Alexandria", sans-serif;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+}
+
+/* TÍTULO DO CARD */
+.card-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* TEXTO DO CARD */
+.card-info p {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.card-info h3 {
+    text-align: center;
+}
+
+.osso-container {
+    display: flex;
+    justify-content: flex-end; /* Joga para a direita */
+    padding: 20px 50px; /* Ajuste o espaço que quiser */
+}
+
+.osso {
+    width: 70px; /* tamanho pequeno */
+    opacity: 0.6; /* opcional, para ficar mais suave */
+}
+
+.homem-abracando {
+    display: flex;
+    align-items: flex-start; /* alinha topo com topo */
+    gap: 40px; /* espaço entre a imagem e o texto */
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o bloco na página */
+    
+}
+
+.homem-abracando img {
+    width: 340px; /* ajuste conforme seu figma */
+    height: auto;
+    border-radius: 15px;
+}
+
+.texto-projeto {
+    max-width: 600px;
+}
+
+.texto-projeto h3 {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: CENTER;
+    width: 100%;
+}
+
+.texto-projeto p {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* --- PATAS DECORAÇÃO --- */
+.sobre-projeto {
+    position: relative;
+    z-index: 50; /* sobre as próximas seções */
+    background: white; /* garante que o fundo cinza comece depois */
+}
+
+.patas-decoracao img {
+    width: 90px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 9999;
+    position: relative; /* cria camada acima do fundo cinza */
+}
+
+/* --- ESTILO DO CARD IGUAL AO FIGMA --- */
+.card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    padding-bottom: 25px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.12);
+}
+
+/* Afastar seção cinza das patinhas */
+section.py-5 {
+    margin-top: 80px;  /* ajuste como quiser */
+}
+
+/* imagem com cantos arredondados somente no topo */
+.card-img-top {
+    border-radius: 18px 18px 0 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* texto do card */
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #000;
+}
+
+/* botão "Adotar" igual ao Figma */
+.btn-adotar {
+    font-family: "Staatliches", sans-serif !important;
+    background-color: #C88A4A; /* cor do Figma */
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+
+    padding: 7px 50px;
+    border-radius: 12px;
+
+    border: none;
+    cursor: pointer;
+
+    display: inline-block;
+    width: fit-content; /* evita o esticamento */
+    text-decoration: none; /* caso use <a> */
+}
+
+
+.btn-adotar:hover {
+    background-color: #b4743d;
+    color: white;
+}
+
+/* seta ao lado do título */
+.seta-btn {
+    cursor: pointer;
+    width: 30px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.seta-btn:hover {
+    transform: translateX(4px);
+}
+
+/* --- SEÇÃO SOBRE NÓS --- */
+.sobre-nos {
+    background-color: #f3f3f3; /* fundo claro igual ao Figma */
+    padding: 80px 0; 
+}
+
+.titulo-sobre {
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-sobre {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.texto-sobre p {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.img-sobre {
+    border-radius: 18px;
+    width: 70%;
+    object-fit: cover;
+}
+
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+/* Coluna dos devs */
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centraliza toda a coluna */
+    text-align: center;
+}
+
+/* Título */
+.dev-title {
+    margin-bottom: 35px;    /* AFASTAMENTO entre o título e os nomes */
+    font-size: 26px;
+    font-family: "Staatliches", sans-serif;
+}
+
+/* Cada nome */
+.dev-info p {
+    margin: 100px 100;          /* Espaçamento pequeno entre os nomes */
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+/* Links */
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Staatliches", sans-serif;
+}
+
+/* AGRUPAR LOGO + MENU NO MESMO BLOCO */
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* espaço entre logo e links */
+}
+
+/* aumentar a logo */
+.logo-footer img {
+    width: 240px;
+}
+
+/* links ao lado da logo */
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-footer .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+/* coluna dos desenvolvedores */
+.dev-info {
+    font-family: "Staatliches", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dev-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
