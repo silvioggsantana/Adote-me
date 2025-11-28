@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+navbar-custom {
+    background-color: #ffffff; /* coloque a cor que quiser */
+}
+
+.navbar-nav {
+    gap: 30px; /* altere o valor como quiser */
+}
+
+/* Muda a cor dos links */
+.navbar-nav .nav-link {
+    color: #000 !important;   /* ALTERE AQUI */
+}
+
+/* Cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    color: #575151 !important;  /* ALTERE AQUI */
+}
+
+/* Fonte apenas no navbar */
+.navbar-nav .nav-link {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500; /* ajuste se quiser */
+}
+
+.homem-abracando {
+    display: flex;
+    align-items: flex-start; /* alinha topo com topo */
+    gap: 40px; /* espaço entre a imagem e o texto */
+    padding: 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto; /* centraliza o bloco na página */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.homem-abracando img {
+    width: 340px; /* ajuste conforme seu figma */
+    height: auto;
+    border-radius: 15px;
+}
+
+.texto-projeto {
+    max-width: 600px;
+}
+
+.texto-projeto h3 {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: CENTER;
+    width: 100%;
+}
+
+.texto-projeto p {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* --- FOOTER --- */
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+}
+
+.dev-title {
+    margin-bottom: 35px; 
+    font-size: 26px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.dev-info p {
+    margin: 100px 100;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Staatliches", sans-serif;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo-footer img {
+    width: 240px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-footer .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+.dev-info {
+    font-family: "Staatliches", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dev-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* --- FOOTER FIM --- */
