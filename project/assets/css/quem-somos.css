@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+navbar-custom {
+    background-color: #ffffff; /* coloque a cor que quiser */
+}
+
+.navbar-nav {
+    gap: 30px; /* altere o valor como quiser */
+}
+
+/* Muda a cor dos links */
+.navbar-nav .nav-link {
+    color: #000 !important;   /* ALTERE AQUI */
+}
+
+/* Cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    color: #575151 !important;  /* ALTERE AQUI */
+}
+
+/* Fonte apenas no navbar */
+.navbar-nav .nav-link {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500; /* ajuste se quiser */
+}
+
+/* --- SEÇÃO SOBRE NÓS --- */
+.sobre-nos {
+    background-color: #f3f3f3; /* fundo claro igual ao Figma */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.titulo-sobre {
+    text-align: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo-sobre {
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.texto-sobre p {
+    font-family: "Staatliches", sans-serif !important;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.img-sobre {
+    border-radius: 18px;
+    width: 70%;
+    object-fit: cover;
+}
+
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+/* --- FOOTER --- */
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+}
+
+.dev-title {
+    margin-bottom: 35px; 
+    font-size: 26px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.dev-info p {
+    margin: 100px 100;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Staatliches", sans-serif;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo-footer img {
+    width: 240px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-footer .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+.dev-info {
+    font-family: "Staatliches", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dev-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* --- FOOTER FIM --- */
