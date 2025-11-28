@@ -14,21 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <img src="../assets/imgs/Logo.png" alt="" style="width: 80px;">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-link" href="home.html">Home</a>
-                    <a class="nav-link" href="adotar.html">Adotar</a>
-                    <a class="nav-link" href="#">Postar</a>
-                    <a class="nav-link" href="#">Quem somos</a>
-                    <a class="nav-link" href="#">Projeto</a>
-                </div>
-            </div>
-            <img src="../assets/imgs/icon-perfil.png" alt="">
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <div class="container-principal">
         <img src="../assets/imgs/imagem-principal.png" alt="">
@@ -229,5 +215,14 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        fetch("../components/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
 </body>
+
 </html>
