@@ -1,0 +1,193 @@
+[
+    {
+        "id": 1,
+        "nome": "Odie",
+        "sexo": "Macho",
+        "porte": "Médio",
+        "descricao": "Cachorro dócil, brincalhão e adora crianças.",
+        "pasta": "odie",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.odie@gmail.com"
+    },
+    {
+        "id": 2,
+        "nome": "Pepita",
+        "sexo": "Fêmea",
+        "porte": "Médio",
+        "descricao": "Cadela brincalhona, ama correr e pular.",
+        "pasta": "pepita",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.pepita@gmail.com"
+    },
+    {
+        "id": 3,
+        "nome": "Thalys",
+        "sexo": "Macho",
+        "porte": "Pequeno",
+        "descricao": "Bagunceiro, carente de atenção.",
+        "pasta": "thalys",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.thalys@gmail.com"
+    },
+    {
+        "id": 4,
+        "nome": "Jade",
+        "sexo": "Fêmea",
+        "porte": "Grande",
+        "descricao": "Ama passear, protege sua casa, bem peluda.",
+        "pasta": "jade",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.jade@gmail.com"
+    },
+    {
+        "id": 5,
+        "nome": "Todynho",
+        "sexo": "Macho",
+        "porte": "Pequeno",
+        "descricao": "Medroso, gosta de atenção.",
+        "pasta": "todynho",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.todynho@gmail.com"
+    },
+    {
+        "id": 6,
+        "nome": "Thor",
+        "sexo": "Macho",
+        "porte": "Grande",
+        "descricao": "Cachorro são paulino kkkk.",
+        "pasta": "thor",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.thor@gmail.com"
+    },
+    {
+        "id": 7,
+        "nome": "Anubis",
+        "sexo": "Macho",
+        "porte": "Grande",
+        "descricao": "Anubis é um pitbull de 7 anos de idade  com pessoas próximas ele é extremamente dócil gosta muito de brincar mais as brincadeiras são muito brutas pois ele não tem noção do tamanho dele e tem muita energia oque é normal da raça dele e com pessoas desconhecidas ele não é muito fã não assim como com outros animais. Oque faz ele um excelente cão de guarda.",
+        "pasta": "anubis",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.anubis@gmail.com"
+    },
+    {
+        "id": 8,
+        "nome": "Beilly",
+        "sexo": "Macho",
+        "porte": "Pequeno",
+        "descricao": "Muito amoroso.",
+        "pasta": "beilly",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg"
+        ],
+        "emailDono": "dono.beilly@gmail.com"
+    },
+    {
+        "id": 9,
+        "nome": "Simba",
+        "sexo": "Macho",
+        "porte": "Médio",
+        "descricao": "Carinhoso, risonho e charmoso Adora um colo, abraços e chinelos.",
+        "pasta": "simba",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.simba@gmail.com"
+    },
+    {
+        "id": 10,
+        "nome": "Pandora",
+        "sexo": "Fêmea",
+        "porte": "Pequeno",
+        "descricao": "Brincalhona, birrenta e fotogênica. Adora uma corrida, brigar com o patinho e tirar fotos.",
+        "pasta": "pandora",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.pandora@gmail.com"
+    },
+    {
+        "id": 11,
+        "nome": "Toby",
+        "sexo": "Macho",
+        "porte": "Pequeno",
+        "descricao": "Toby e nosso companheiro, e apaixonado pela mamãe e papai, gosta de sossego e de ser mimado.",
+        "pasta": "toby",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.toby@gmail.com"
+    },
+    {
+        "id": 12,
+        "nome": "Feh",
+        "sexo": "Macho",
+        "porte": "Pequeno",
+        "descricao": "Esse cachorro é um demônio.",
+        "pasta": "feh",
+        "fotos": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg",
+            "foto4.jpg",
+            "foto5.jpg"
+        ],
+        "emailDono": "dono.feh@gmail.com"
+    }
+]

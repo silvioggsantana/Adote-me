@@ -1,0 +1,85 @@
+/* cards.css - estilos dos cards exibidos na home */
+
+/* cartão principal gerado pelo JS */
+.card-dog {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+/* imagem do card (igual na página adotar) */
+.card-dog .card-img-top {
+    height: 210px; /* mantive próximo do adotar.html */
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+/* corpo do card */
+.card-dog .card-body {
+    padding: 20px;
+}
+
+/* ---------- DESCRIÇÃO: limitar a 2 linhas + efeito de fade ---------- */
+
+/* caixa que limita o espaço e recebe o gradiente */
+.card-dog .text-container {
+    position: relative;
+    width: 100%;
+    /* 2 linhas * line-height (1.3rem) = 2.6rem */
+    max-height: calc(1.3rem * 2);
+    overflow: hidden;
+    /* pequeno padding-right evita que o fade "corte" a última letra em alguns navegadores */
+    padding-right: 2px;
+}
+
+/* texto da descrição: clamp 2 linhas (webkit) + fallback */
+.card-dog .card-text {
+    margin: 0 0 16px 0;
+    font-size: 1.2rem;
+    line-height: 1.3rem;      /* importante: sincronizar com calc() acima */
+    font-weight: 500;
+    color: #000;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;    /* mostra 2 linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;         /* garante corte onde necessário */
+    word-break: break-word;
+}
+
+/* gradiente vertical no final (fade) aplicado ao container */
+.card-dog .text-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.4rem; /* altura do fade; ajuste se quiser mais/menos suave */
+    pointer-events: none;
+    /* degrade transparente -> branco, troque #ffffff se o fundo do cartão mudar */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff 60%);
+}
+
+/* botão e comportamento */
+.card-dog .btn-adotar {
+    display: inline-block;      
+    width: 180px;             
+    background-color: #C98C45;
+    color: white;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-family: "Staatliches", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.card-dog .btn-adotar:hover {
+    background-color: #a67134;
+}

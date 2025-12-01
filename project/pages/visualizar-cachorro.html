@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/logo.ico">
+    <link rel="stylesheet" href="../assets/css/visualizar-cachorro.css">
+    <title>Adote Me</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="card-wrapper">
+        <div class="container my-5 justify-content-center">
+
+            <!-- GRID DE FOTOS -->
+            <!-- GRID DE FOTOS -->
+            <div class="row g-3 d-flex flex-wrap justify-content-center">
+
+                <!-- Foto grande 1 -->
+                <div class="col-md-6">
+                    <div class="photo-card large">
+                        <img id="photo-1" class="foto-cachorro">
+                    </div>
+                </div>
+
+                <!-- Foto grande 2 -->
+                <div class="col-md-6">
+                    <div class="photo-card large">
+                        <img id="photo-2" class="foto-cachorro">
+                    </div>
+                </div>
+
+                <!-- Foto pequena 1 -->
+                <div class="col-auto d-flex justify-content-center">
+                    <div class="photo-card small">
+                        <img id="photo-3" class="foto-cachorro">
+                    </div>
+                </div>
+
+                <!-- Foto pequena 2 -->
+                <div class="col-auto d-flex justify-content-center">
+                    <div class="photo-card small">
+                        <img id="photo-4" class="foto-cachorro">
+                    </div>
+                </div>
+
+                <!-- Foto pequena 3 -->
+                <div class="col-auto d-flex justify-content-center">
+                    <div class="photo-card small">
+                        <img id="photo-5" class="foto-cachorro">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEXO + PORTE -->
+            <div class="row text-center mt-4">
+
+                <!-- SEXO -->
+                <div class="col-md-6 sexo-porte-group">
+                    <p class="titulo-campo"><strong>SEXO:</strong></p>
+                    <p class="valor-campo" id="sexo"></p>
+                </div>
+
+                <!-- PORTE -->
+                <div class="col-md-6 sexo-porte-group">
+                    <p class="titulo-campo"><strong>PORTE:</strong></p>
+                    <p class="valor-campo" id="porte"></p>
+                </div>
+
+            </div>
+
+            <!-- NOME -->
+            <div class="mt-4">
+                <p class="form-label">
+                    <strong>Nome:</strong> <span id="nome"></span>
+                </p>
+            </div>
+
+            <!-- DESCRIÇÃO -->
+            <div class="mt-4">
+                <p class="form-label"><strong>Descrição:</strong></p>
+                <div class="descricao-box" id="descricao"></div>
+            </div>
+
+            <!-- BOTÃO ADOTAR -->
+            <div class="d-flex justify-content-end mt-5">
+                <button id="btnAdotar" class="btn-atualizar">ADOTAR</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- MODAL DE VISUALIZAÇÃO DE IMAGENS -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+
+        <span class="nav-arrow left-arrow">&#10094;</span>
+        <img id="modalImage" class="modal-content-image">
+        <span class="nav-arrow right-arrow">&#10095;</span>
+    </div>
+
+    <script src="../assets/js/data-cachorros.js"></script>
+    <script src="../assets/js/visualizar-cachorro.js"></script>
+    <script src="../assets/js/global.js"></script>
+</body>
+
+</html>

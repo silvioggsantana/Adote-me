@@ -241,6 +241,24 @@ section.py-5 {
     line-height: 1.3;
     font-weight: 500;
     color: #000;
+
+    /* --- NOVO: limitar a 2 linhas + fade --- */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;     /* quantas linhas mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gradiente no final do texto */
+.card-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1.3rem; /* altura do fade (igual à altura da linha) */
+    width: 50%;
+    background: linear-gradient(to right, transparent, #ffffff);
 }
 
 /* botão "Adotar" igual ao Figma */
@@ -280,6 +298,7 @@ section.py-5 {
 .seta-btn:hover {
     transform: translateX(4px);
 }
+
 
 /* --- SEÇÃO SOBRE NÓS --- */
 .sobre-nos {

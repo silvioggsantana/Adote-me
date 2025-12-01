@@ -138,6 +138,46 @@ navbar-custom {
 }
 /* --- ÍCONES DECORATIVOS ABAIXO DA 2ª LINHA FIM --- */
 
+/* Impede o card de crescer e aplica fade-out no texto */
+.text-container {
+    position: relative;
+    max-height: 105px;        /* altura fixa */
+    overflow: hidden;
+}
+
+/* Gradiente do fade-out */
+.text-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;             /* tamanho do desfoque */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;       /* número de linhas desejado */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    min-height: 2.8em;  
+    text-overflow: ellipsis;
+}
+
+/* Gradiente no final da descrição */
+.card-text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1.5em;
+    background: linear-gradient(to top, #ffffff, transparent);
+}
+
+
 /* --- FOOTER --- */
 .footer-dev {
     background-color: #5a2d2c;

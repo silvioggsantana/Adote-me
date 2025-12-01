@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+navbar-custom {
+    background-color: #ffffff; /* coloque a cor que quiser */
+}
+
+.navbar-nav {
+    gap: 30px; /* altere o valor como quiser */
+}
+
+/* Muda a cor dos links */
+.navbar-nav .nav-link {
+    color: #000 !important;   /* ALTERE AQUI */
+}
+
+/* Cor ao passar o mouse */
+.navbar-nav .nav-link:hover {
+    color: #575151 !important;  /* ALTERE AQUI */
+}
+
+/* Fonte apenas no navbar */
+.navbar-nav .nav-link {
+    font-family: "Alexandria", sans-serif;
+    font-weight: 500; /* ajuste se quiser */
+}
+
+.photo-card {
+    background-color: #c4c4c4;
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card.large {
+    height: 260px;
+}
+
+.photo-card.small {
+    height: 180px;
+}
+
+/* FOTO REAL */
+.foto-cachorro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* mantém a proporção bonita */
+    border-radius: 12px; /* combina com o card */
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- SEXO & PORTE (estilo Figma) --- */
+
+.sexo-porte-group {
+    text-align: center;
+}
+
+.titulo-campo {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    font-family: "Staatliches", sans-serif;
+}
+
+/* BOTÕES */
+.btn-option {
+    background: #d9d9d9;     /* cinza padrão */
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-weight: 700;
+    margin: 0 6px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Staatliches", sans-serif;
+    transition: 0.2s ease;
+    color: #000;             /* texto preto por padrão */
+}
+
+.btn-option:hover {
+    background: #c6c6c6;    /* apenas um hover leve */
+    opacity: 1;             /* remove o escurecimento anterior */
+}
+
+/* BOTÃO ATIVO (selecionado) */
+.btn-option.ativo {
+    background: #b77a33 !important;   /* marrom */
+    color: #fff !important;           /* texto branco */
+}
+
+/* INPUT Nome */
+.form-label {
+    display: block;      /* força quebra de linha */
+    margin-bottom: 6px;  /* espaço entre o label e o input */
+}
+
+/* INPUT Nome */
+.input-custom {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 12px;
+    height: 42px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input-custom:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #000000;  /* Borda preta */
+}
+
+/* TEXTAREA Descrição */
+.textarea-custom {
+    background: #e5e5e5;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* igual ao input */
+    width: 100%;
+    min-height: 140px;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.textarea-custom:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #000000; /* borda preta somente no clique */
+}
+
+.descricao-box {
+    background: #e5e5e5;
+    border-radius: 12px;
+    padding: 12px 15px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    min-height: 100px;
+    font-size: 16px;
+}
+
+.btn-atualizar {
+    background-color: #C68747;     /* cor do Figma */
+    color: #ffffff;
+    width: 120px;
+    height: 45px;                  /* altura ajustada */
+    border-radius: 20px;           /* arredondamento igual à imagem */
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Staatliches", sans-serif;
+    font-size: 17px;               /* diminui o texto */
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-atualizar:hover {
+    opacity: 0.85;
+}
+
+.card-wrapper {
+    max-width: 1100px;        /* largura elegante */
+    margin: 40px auto;        /* centraliza o card */
+    padding: 40px;            /* espaço interno */
+    
+    border-radius: 23px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 0px #d7d7d7,
+                -5px -5px 0px #e9e9e9;
+}
+
+/* ----------------- MODAL DE IMAGEM ----------------- */
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Botão fechar */
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Setas */
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    color: white; 
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.nav-arrow:hover {
+    color: #d0d0d0;
+}
+
+/* Esconder coluna de foto (força com !important) */
+.hidden-photo-col {
+    display: none !important;
+}
+
+/* Garante que o card não mostre nenhum background herdado */
+.photo-card.no-bg {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+/* --- FOOTER --- */
+.footer-dev {
+    background-color: #5a2d2c;
+    padding: 60px 80px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* importante */
+    gap: 120px;
+}
+
+
+.dev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;
+}
+
+.dev-title {
+    margin-bottom: 35px; 
+    font-size: 26px;
+    font-family: "Staatliches", sans-serif;
+}
+
+.dev-info p {
+    margin: 100px 100;
+    font-family: "Staatliches", sans-serif;
+    font-size: 20px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: "Staatliches", sans-serif;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo-footer img {
+    width: 240px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-footer .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+.dev-info {
+    font-family: "Staatliches", sans-serif;
+    margin-top: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.dev-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dev-info a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* --- FOOTER FIM --- */

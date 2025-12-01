@@ -9,7 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/logo.ico">
     <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/cards.css">
     <title>Adote Me</title>
 </head>
 
@@ -81,70 +83,20 @@
     </section>
 
     <section class="py-5" style="background-color: #f3f3f3;">
-
         <div class="container">
-
-            <!-- TÍTULO + SETA -->
             <div class="d-flex align-items-center gap-3 mb-4">
                 <h3 class="fw-bold m-0" style="font-size: 1.4rem;">
                     AMIGOS QUE ESTÃO PRONTOS PARA RECEBER UM LAR
                 </h3>
-                <img src="../assets/imgs/seta.png" width="28" alt="Seta" class="seta-btn">
+                <a href="adotar.html">
+                    <img src="../assets/imgs/seta.png" width="28" alt="Seta" class="seta-btn">
+                </a>
             </div>
 
-            <!-- GRID DE CARDS -->
-            <div class="row g-4">
+            <!-- AQUI OS CARDS VÃO SER INSERIDOS -->
+            <div class="row g-4" id="cards-home"></div>
 
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img src="../assets/imgs/cachorro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Descrição do cachorro, características e personalidade, tamanho e etc.
-                            </p>
-                            <a href="#" class="btn-adotar">ADOTAR</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img src="../assets/imgs/cachorro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Descrição do cachorro, características e personalidade, tamanho e etc.
-                            </p>
-                            <a href="#" class="btn-adotar">ADOTAR</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img src="../assets/imgs/cachorro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Descrição do cachorro, características e personalidade, tamanho e etc.
-                            </p>
-                            <a href="#" class="btn-adotar">ADOTAR</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card" style="width: 100%;">
-                        <img src="../assets/imgs/cachorro.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">
-                                Descrição do cachorro, características e personalidade, tamanho e etc.
-                            </p>
-                            <a href="#" class="btn-adotar">ADOTAR</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+            <script src="../assets/js/home-cards.js"></script>
         </div>
     </section>
 
