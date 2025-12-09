@@ -61,29 +61,60 @@ document.querySelectorAll("[data-porte]").forEach(btn => {
     });
 });
 
+async function enviarFotos(idCao) {
+
+    for (let i = 0; i < fotos.length; i++) {
+
+        const file = document.querySelector(`[data-id="${i}"]`).files[0];
+
+        if (!file) continue;
+
+        const formData = new FormData();
+        formData.append("foto", file);
+        formData.append("id_cao", idCao);
+
+        const response = await fetch("http://localhost/apicaes/upload.php", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+        console.log("UPLOAD:", result);
+    }
+}
 
 
-// --- BOTÃO SALVAR ---
 document.querySelector("#btnSalvar").addEventListener("click", async () => {
 
     const payload = {
         nome: document.querySelector("#nome").value,
         descricao: document.querySelector("#descricao").value,
+        idade: Number(document.querySelector("#idade").value),
         sexo: sexoSelecionado,
         porte: porteSelecionado,
-        idade: Number(document.querySelector("#idade").value),
-        id_usuario: 4,
-        fotos: fotos.filter(f => f !== "") // tira espaços vazios
+        id_usuario: 4
     };
 
-    console.log("ENVIANDO PARA API:", payload);
-
-    const response = await fetch("http://localhost/apicaes/api.php?url=api/caes", {
+    // 1 → Cria o cachorro
+    const response = await fetch("http://localhost/apicaes/api/Caes.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
     });
 
     const result = await response.json();
-    console.log(result);
+
+    if (result.erro) {
+        alert("Erro ao cadastrar cachorro");
+        return;
+    }
+
+    // ID retornado
+    const idCao = result.dados.id;
+
+    // Agora envia as fotos
+    await enviarFotos(idCao);
+
+    alert("Cachorro + fotos cadastrados!");
 });
+
